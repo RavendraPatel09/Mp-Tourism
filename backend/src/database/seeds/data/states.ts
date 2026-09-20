@@ -1,0 +1,86 @@
+/**
+ * All 28 states and 8 union territories. Only the pilot state is `isLive` —
+ * the rest exist so the picker is complete from day one and so a badge like
+ * "All 28+8" has something to count against.
+ */
+export const STATE_SEED: { name: string; code: string; type: 'state' | 'ut'; isLive?: boolean }[] =
+  [
+    { name: 'Andhra Pradesh', code: 'AP', type: 'state' },
+    { name: 'Arunachal Pradesh', code: 'AR', type: 'state' },
+    { name: 'Assam', code: 'AS', type: 'state' },
+    { name: 'Bihar', code: 'BR', type: 'state' },
+    { name: 'Chhattisgarh', code: 'CG', type: 'state' },
+    { name: 'Goa', code: 'GA', type: 'state' },
+    { name: 'Gujarat', code: 'GJ', type: 'state' },
+    { name: 'Haryana', code: 'HR', type: 'state' },
+    { name: 'Himachal Pradesh', code: 'HP', type: 'state' },
+    { name: 'Jharkhand', code: 'JH', type: 'state' },
+    { name: 'Karnataka', code: 'KA', type: 'state' },
+    { name: 'Kerala', code: 'KL', type: 'state' },
+    { name: 'Madhya Pradesh', code: 'MP', type: 'state', isLive: true },
+    { name: 'Maharashtra', code: 'MH', type: 'state' },
+    { name: 'Manipur', code: 'MN', type: 'state' },
+    { name: 'Meghalaya', code: 'ML', type: 'state' },
+    { name: 'Mizoram', code: 'MZ', type: 'state' },
+    { name: 'Nagaland', code: 'NL', type: 'state' },
+    { name: 'Odisha', code: 'OD', type: 'state' },
+    { name: 'Punjab', code: 'PB', type: 'state' },
+    { name: 'Rajasthan', code: 'RJ', type: 'state' },
+    { name: 'Sikkim', code: 'SK', type: 'state' },
+    { name: 'Tamil Nadu', code: 'TN', type: 'state' },
+    { name: 'Telangana', code: 'TG', type: 'state' },
+    { name: 'Tripura', code: 'TR', type: 'state' },
+    { name: 'Uttar Pradesh', code: 'UP', type: 'state' },
+    { name: 'Uttarakhand', code: 'UK', type: 'state' },
+    { name: 'West Bengal', code: 'WB', type: 'state' },
+    { name: 'Andaman and Nicobar Islands', code: 'AN', type: 'ut' },
+    { name: 'Chandigarh', code: 'CH', type: 'ut' },
+    { name: 'Dadra and Nagar Haveli and Daman and Diu', code: 'DH', type: 'ut' },
+    { name: 'Delhi', code: 'DL', type: 'ut' },
+    { name: 'Jammu and Kashmir', code: 'JK', type: 'ut' },
+    { name: 'Ladakh', code: 'LA', type: 'ut' },
+    { name: 'Lakshadweep', code: 'LD', type: 'ut' },
+    { name: 'Puducherry', code: 'PY', type: 'ut' },
+  ];
+
+/** A subset of MP districts — the ones the pilot content sprint covers first. */
+export const MP_DISTRICTS = [
+  'Bhopal',
+  'Chhatarpur',
+  'Chhindwara',
+  'Dhar',
+  'Gwalior',
+  'Hoshangabad',
+  'Indore',
+  'Jabalpur',
+  'Khargone',
+  'Mandla',
+  'Niwari',
+  'Raisen',
+  'Rewa',
+  'Sagar',
+  'Sehore',
+  'Shivpuri',
+  'Sidhi',
+  'Ujjain',
+  'Vidisha',
+];
+
+/** PRD §5.1 F2, in the order the filter sheet shows them. */
+export const CATEGORY_SEED = [
+  { name: 'Historical', slug: 'historical', icon: 'landmark' },
+  { name: 'Cultural', slug: 'cultural', icon: 'masks' },
+  { name: 'Religious', slug: 'religious', icon: 'temple' },
+  { name: 'Nature', slug: 'nature', icon: 'tree' },
+  { name: 'Adventure', slug: 'adventure', icon: 'mountain' },
+  { name: 'Wildlife', slug: 'wildlife', icon: 'paw' },
+  { name: 'Food', slug: 'food', icon: 'utensils' },
+  { name: 'Heritage', slug: 'heritage', icon: 'scroll' },
+  { name: 'Architecture', slug: 'architecture', icon: 'columns' },
+  { name: 'Offbeat', slug: 'offbeat', icon: 'compass' },
+  { name: 'Waterfalls', slug: 'waterfalls', icon: 'droplet' },
+  { name: 'Lakes & Rivers', slug: 'lakes-rivers', icon: 'waves' },
+  { name: 'Tribal & Craft', slug: 'tribal-craft', icon: 'hand' },
+  { name: 'Museums', slug: 'museums', icon: 'building-library' },
+  { name: 'Sunrise / Sunset Points', slug: 'sunrise-sunset', icon: 'sun' },
+];

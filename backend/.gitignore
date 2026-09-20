@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+tsconfig.tsbuildinfo
+uploads/
+# openapi/openapi.json is deliberately NOT ignored — the frozen contract is
+# committed so Member A and Member C can read it straight from the repo, and CI
+# fails when the code drifts from it.
