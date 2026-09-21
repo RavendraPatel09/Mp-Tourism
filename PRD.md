@@ -1,10 +1,10 @@
-# PRD — Bharat Trails
+# PRD — YatraGo
 
 **India Tourism Discovery & Exploration Platform**
 
 | Field | Value |
 |---|---|
-| Working name | Bharat Trails (final naming TBD) |
+| Working name | YatraGo (final naming TBD) |
 | Version | 0.1 (Draft) |
 | Date | 2026-09-20 |
 | Owner | Product — Ravendra Patel |
@@ -14,7 +14,7 @@
 
 ## 1. Summary
 
-Bharat Trails is a mobile-first platform that helps travellers discover what to explore in **any state or union territory of India**, filtered by what they actually care about — history, religion, nature, adventure, wildlife, food, culture, heritage.
+YatraGo is a mobile-first platform that helps travellers discover what to explore in **any state or union territory of India**, filtered by what they actually care about — history, religion, nature, adventure, wildlife, food, culture, heritage.
 
 Each destination ships with the things to do there, a suggested itinerary, realistic time estimates, location, and practical visitor information.
 

@@ -1,4 +1,4 @@
-# Bharat Trails
+# YatraGo
 
 **An India tourism discovery & exploration platform that pays you to go where nobody goes.**
 

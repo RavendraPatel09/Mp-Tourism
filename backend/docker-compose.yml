@@ -1,4 +1,4 @@
-name: bharat-trails
+name: yatrago
 
 services:
   postgres:
@@ -7,15 +7,15 @@ services:
     # inside the geofence query instead of a clear one at boot.
     image: postgis/postgis:16-3.4
     environment:
-      POSTGRES_USER: bharat
-      POSTGRES_PASSWORD: bharat
-      POSTGRES_DB: bharat_trails
+      POSTGRES_USER: yatrago
+      POSTGRES_PASSWORD: yatrago
+      POSTGRES_DB: yatrago
     ports:
       - '5432:5432'
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U bharat -d bharat_trails']
+      test: ['CMD-SHELL', 'pg_isready -U yatrago -d yatrago']
       interval: 5s
       timeout: 5s
       retries: 10
@@ -60,8 +60,8 @@ services:
     entrypoint: >
       /bin/sh -c "
       until mc alias set local http://minio:9000 minioadmin minioadmin; do sleep 1; done;
-      mc mb --ignore-existing local/bharat-trails-media-dev;
-      mc anonymous set download local/bharat-trails-media-dev;
+      mc mb --ignore-existing local/yatrago-media-dev;
+      mc anonymous set download local/yatrago-media-dev;
       echo 'Bucket ready.';
       "
 

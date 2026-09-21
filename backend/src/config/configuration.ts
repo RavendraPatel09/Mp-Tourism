@@ -38,9 +38,9 @@ export const configuration = () => ({
   database: {
     host: process.env.DATABASE_HOST ?? 'localhost',
     port: int(process.env.DATABASE_PORT, 5432),
-    username: process.env.DATABASE_USER ?? 'bharat',
-    password: process.env.DATABASE_PASSWORD ?? 'bharat',
-    database: process.env.DATABASE_NAME ?? 'bharat_trails',
+    username: process.env.DATABASE_USER ?? 'yatrago',
+    password: process.env.DATABASE_PASSWORD ?? 'yatrago',
+    database: process.env.DATABASE_NAME ?? 'yatrago',
     ssl: bool(process.env.DATABASE_SSL),
     logging: bool(process.env.DATABASE_LOGGING),
   },
@@ -65,7 +65,7 @@ export const configuration = () => ({
   media: {
     endpoint: process.env.S3_ENDPOINT || undefined,
     region: process.env.S3_REGION ?? 'ap-south-1',
-    bucket: process.env.S3_BUCKET ?? 'bharat-trails-media-dev',
+    bucket: process.env.S3_BUCKET ?? 'yatrago-media-dev',
     accessKeyId: process.env.S3_ACCESS_KEY_ID ?? '',
     secretAccessKey: process.env.S3_SECRET_ACCESS_KEY ?? '',
     forcePathStyle: bool(process.env.S3_FORCE_PATH_STYLE),

@@ -24,7 +24,7 @@ const app = express();
 app.use(express.json({ limit: '1mb' }));
 
 app.use((request, response, next) => {
-  response.setHeader('X-Mock-Server', 'bharat-trails');
+  response.setHeader('X-Mock-Server', 'yatrago');
   // Deliberate latency: the app must show a spinner, not a frozen screen.
   setTimeout(next, 120 + Math.random() * 180);
 });

@@ -117,19 +117,19 @@ async function seedAdminUsers(ds: DataSource): Promise<void> {
   const mp = await ds.getRepository(State).findOneOrFail({ where: { code: 'MP' } });
   const accounts = [
     {
-      email: 'super@bharattrails.test',
+      email: 'super@yatrago.test',
       username: 'super_admin',
       role: UserRole.SUPER_ADMIN,
       stateId: null,
     },
     {
-      email: 'state.mp@bharattrails.test',
+      email: 'state.mp@yatrago.test',
       username: 'mp_admin',
       role: UserRole.STATE_ADMIN,
       stateId: mp.id,
     },
     {
-      email: 'moderator@bharattrails.test',
+      email: 'moderator@yatrago.test',
       username: 'moderator_one',
       role: UserRole.MODERATOR,
       stateId: null,
@@ -166,7 +166,7 @@ async function seedAdminUsers(ds: DataSource): Promise<void> {
 async function seedDestinations(ds: DataSource, districtIds: Map<string, string>): Promise<void> {
   const mp = await ds.getRepository(State).findOneOrFail({ where: { code: 'MP' } });
   const creator = await ds.getRepository(User).findOne({
-    where: { email: 'super@bharattrails.test' },
+    where: { email: 'super@yatrago.test' },
   });
 
   let created = 0;
@@ -323,7 +323,7 @@ async function seedChallenges(ds: DataSource): Promise<void> {
 }
 
 async function run(): Promise<void> {
-  console.log('Seeding Bharat Trails…');
+  console.log('Seeding YatraGo…');
   const ds = await dataSource.initialize();
 
   try {

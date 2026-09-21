@@ -1,4 +1,4 @@
-# Bharat Trails — Backend
+# YatraGo — Backend
 
 **Member B · API, database, points ledger, verification pipeline**
 
@@ -21,8 +21,8 @@ npm run start:dev             # API   → http://localhost:3000/v1  · docs at /
 npm run worker:dev            # worker (separate terminal)
 ```
 
-Seeded logins (development only): `super@bharattrails.test`, `state.mp@bharattrails.test`,
-`moderator@bharattrails.test` — password `local-dev-password-1`.
+Seeded logins (development only): `super@yatrago.test`, `state.mp@yatrago.test`,
+`moderator@yatrago.test` — password `local-dev-password-1`.
 Phone OTP in development is returned in the response as `devCode` and logged; no SMS is sent.
 
 ## For Member A and Member C — start here

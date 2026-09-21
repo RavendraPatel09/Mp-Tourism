@@ -179,6 +179,7 @@ Use a shared Google Sheet with the exact column schema C defines in week 2. Phot
 
 ---
 
+\
 ## Timeline
 
 | Weeks | A — Mobile | B — Backend | C — Web/Admin | Milestone |

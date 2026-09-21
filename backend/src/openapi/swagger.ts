@@ -14,7 +14,7 @@ import { DocumentBuilder, OpenAPIObject, SwaggerModule } from '@nestjs/swagger';
  */
 export function buildOpenApiDocument(app: INestApplication, apiPrefix: string): OpenAPIObject {
   const config = new DocumentBuilder()
-    .setTitle('Bharat Trails API')
+    .setTitle('YatraGo API')
     .setDescription(
       [
         'India tourism discovery and verified exploration platform.',
@@ -41,8 +41,8 @@ export function buildOpenApiDocument(app: INestApplication, apiPrefix: string): 
     .setVersion('1.0.0')
     .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }, 'bearer')
     .addServer(`http://localhost:3000/${apiPrefix}`, 'Local')
-    .addServer(`https://api-staging.bharattrails.in/${apiPrefix}`, 'Staging')
-    .addServer(`https://api.bharattrails.in/${apiPrefix}`, 'Production')
+    .addServer(`https://api-staging.yatrago.in/${apiPrefix}`, 'Staging')
+    .addServer(`https://api.yatrago.in/${apiPrefix}`, 'Production')
     .addTag('auth', 'Phone OTP and email/password sign-in')
     .addTag('discovery', 'States, categories, destinations, search — mostly public')
     .addTag('check-ins', 'The atomic action: verified on-location photo check-in')
@@ -71,6 +71,6 @@ export function mountSwagger(app: INestApplication, document: OpenAPIObject): vo
       operationsSorter: 'alpha',
       docExpansion: 'none',
     },
-    customSiteTitle: 'Bharat Trails API',
+    customSiteTitle: 'YatraGo API',
   });
 }

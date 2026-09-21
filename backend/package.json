@@ -1,7 +1,7 @@
 {
-  "name": "@bharat-trails/backend",
+  "name": "@yatrago/backend",
   "version": "0.1.0",
-  "description": "Bharat Trails API — destinations, verified check-ins, points ledger, leaderboards, moderation",
+  "description": "YatraGo API — destinations, verified check-ins, points ledger, leaderboards, moderation",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
