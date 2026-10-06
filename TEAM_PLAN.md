@@ -14,7 +14,6 @@
 ## ⚠️ Read this first — scope reality check
 
 The PRD scoped MVP for **4–6 people**. With 3, something has to give. You have three honest options:
-
 | Option | What changes | Recommendation |
 |---|---|---|
 | **A. Cut scope** | 1 pilot state not 2 · 150 destinations not 300 · drop Trip Builder (F7) and Lists (F8) to Phase 2 | ✅ **Do this** |
